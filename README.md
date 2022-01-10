@@ -1,4 +1,4 @@
-# JavaScript projects
+# JavaScript Projects
 
 This is a collection of simple projects that enable me to get a grasp on fundamentals of JavaScript.
 
