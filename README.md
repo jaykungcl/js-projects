@@ -10,5 +10,4 @@ It solidified my skill set on all aspect of JavaScipt; syntax, data sctruction, 
 
 Some other concepts I have learned are communication with RESTful API, JSON/JSON server, local storage, Babel, Webpack, and Firebase 9.
 
-Fundamentals are very important for developer to understand every aspect of the code.
-It enabled me to quickly learn new concepts and JavaScript library/framework to recreate and implements more sophisticated functions and components with efiicient and maintainable code for future projects. (It already helped me in learing React.js! :D)
+This provide a strong foundation in my web development skill and enabled me to quickly learn new concepts, library/framework, recreate and implements more sophisticated projects with efiicient and maintainable code. (It already helped me in learing React.js! :D)
