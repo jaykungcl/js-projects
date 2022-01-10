@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chitchatz</title>
+</head>
+<body>
+
+    <!-- container & title -->
+    <div class="container">
+        <h1>Chitchatz</h1>
+
+    <!-- button for chatrooms -->
+        <div class="chat-rooms">
+            <div>Choose a chatroom:</div>
+            <button class="btn" id="general">#general</button>
+            <button class="btn" id="medical">#medical</button>
+            <button class="btn" id="coffee">#coffee</button>
+            <button class="btn" id="music">#music</button>
+            <button class="btn" id="traveling">#traveling</button>
+        </div>
+    <!-- window -->
+    <div class="chat-window">
+        <ul class="chat-list"></ul>
+    </div>
+    <!-- send message form -->
+    <form action="" class="new-chat">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">Your message:</div>
+            </div>
+            <input type="text" id="message" class="form-control" required>
+            <div class="input-group-append">
+                <input type="submit" class="btn" value="send">
+            </div>
+        </div>
+    </form>
+    <!-- update name form -->
+    <form class="new-name">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">Update Name:</div>
+            </div>
+            <input type="text" id="name" class="form-control" required>
+            <div class="input-group-append">
+                <input type="submit" class="btn" value="update">
+            </div>
+        </div>
+        <div class="update-mssg"></div>
+    </from>
+    </div>
+
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyDunLOyBtGLYisDvbiGL2x_aD86h-joE0U",
+        authDomain: "my-project-cf6c0.firebaseapp.com",
+        projectId: "my-project-cf6c0",
+        storageBucket: "my-project-cf6c0.appspot.com",
+        messagingSenderId: "208818125802",
+        appId: "1:208818125802:web:d2eb1409fa83cf3d21d093",
+        measurementId: "G-1XXLS3GR29"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    </script>
+    <script src="scripts/chat.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
